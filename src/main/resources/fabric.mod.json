@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "mycraft",
+  "version": "${version}",
+
+  "name": "MyCraft (MC)",
+  "description": "Welcome to MyCraft!\nMake your own game\ncraft item, create gui\ntry different things!",
+  "authors": [
+    "mulreon"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/mycraft/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.mulreon.mycraft.MyCraft"
+      }
+    ]
+  },
+  "mixins": [
+    "mycraft.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19",
+    "java": ">=17",
+    "fabric-language-kotlin": ">=1.8.1+kotlin.1.7.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
